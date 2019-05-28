@@ -1,3 +1,34 @@
 page-home {
 
+    .maj
+    {
+        text-transform: capitalize;
+    }
+    .fixed-content
+    {
+        background-color: #337bff85;
+    }
+    .item-block
+    {
+        background-color: #337bff00;
+        border-top: 1px solid black;
+    }
+    .list-ios .item-block .item-inner {
+        border-bottom: 0px solid #c8c7cc;
+    }
+    .list-ios > .item-block:first-child {
+        border-top: 1px solid black;
+    }
+    .item-block:hover
+    {
+        background-color: #4071e0;
+        transition:0.7s;
+    }
+    .list-md .item-block .item-inner {
+        border-bottom: 0px solid #dedede;
+    }
+    h2
+    {
+        text-align: center;
+    }
 }
