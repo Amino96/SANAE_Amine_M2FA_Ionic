@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokemonsProvider } from '../providers/pokemons/pokemons';
 import { DetailsPage } from '../pages/details/details';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +32,7 @@ import { DetailsPage } from '../pages/details/details';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PokemonsProvider 
+    PokemonsProvider
   ]
 })
 export class AppModule {}

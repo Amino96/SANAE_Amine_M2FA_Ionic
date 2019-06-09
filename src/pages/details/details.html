@@ -3,7 +3,7 @@
       <ion-title>Pokédex</ion-title>
     </ion-navbar>
   </ion-header>
-  
+
   <ion-content padding>
     <div *ngIf="pokemon">
       <h2>Tu es sur la page de <span class="maj">{{pokemon.name}}</span></h2>
@@ -13,13 +13,13 @@
           {{types.type.name}}
         </div>
       <!--Abilités-->
-      <p>Ses capacités spéciales sont :</p> 
+      <p>Ses capacités spéciales sont :</p>
         <div class="maj centrer" *ngFor= "let abilitie of pokemon.abilities">
           {{abilitie.ability.name}}
         </div>
       <!--Poids et tailles-->
       <p><span class="maj">{{pokemon.name}}</span> pèse {{pokemon.weight/10}} kilos et mesure {{pokemon.height/10}} mètres.</p>
-      
+
       <!--Images-->
       <p>Si tu rencontres ce Pokémon, il aura ces formes possibles :</p>
           <img src="{{pokemon.sprites.front_default}}"/>
@@ -27,13 +27,10 @@
           <img src="{{pokemon.sprites.back_default}}"/>
           <img src="{{pokemon.sprites.back_shiny}}"/>
           <div class="maj" *ngFor= "let state of pokemon.stats">
-              {{state.stat.name}} : 
+              {{state.stat.name}} :
             <div class="bar" [ngStyle]="{'width': state.base_stat+'%'}"> {{state.base_stat}}</div>
 
             </div>
     </div>
-
-
-    <p>Son cri est :</p>
 
   </ion-content>
