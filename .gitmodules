@@ -1,0 +1,3 @@
+[submodule "sanae_amine_m2fa_ionic"]
+	path = sanae_amine_m2fa_ionic
+	url = https://github.com/Amino96/SANAE_Amine_M2FA_Ionic.git
